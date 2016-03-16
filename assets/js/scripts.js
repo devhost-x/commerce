@@ -172,9 +172,37 @@
             items: 1,
             pagination: false,
             itemsTablet: [768,3]
-        });
-      
+        });         
         $("#owl-best-latest-solution").owlCarousel({
+            stopOnHover: true,
+            rewindNav: true,
+            margin:5,
+            items: 4,            
+            pagination: false,
+            itemsTablet: [768,3]
+        });
+        $("#owl-best-seller-product").owlCarousel({
+            stopOnHover: true,
+            rewindNav: true,
+            margin:5,
+            items: 4,            
+            pagination: false,
+            itemsTablet: [768,3]
+        });
+        $("#owl-best-seller-onsale-product").owlCarousel({        
+            stopOnHover: true,
+            rewindNav: true,            
+            items: 1,            
+            pagination: false,
+            animateOut: "slideOutUp",
+            animateIn: "slideInUp",
+            itemsTablet: [768,3]
+        });
+        $(".bxslider").bxSlider({
+            mode: "vertical",
+            slideMargin: 5
+        });
+        $("#owl-best-latest-product").owlCarousel({
             stopOnHover: true,
             rewindNav: true,
             margin:5,
